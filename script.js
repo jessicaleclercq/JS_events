@@ -63,3 +63,65 @@ console.log(navbar)
 
 navbar.addEventListener("dblclick", deleteCDN);
 
+//Fonctionnalité 6 (qui ne fonctionne pas)
+
+//Définition des différentes variables 
+var view = document.querySelectorAll('.btn-success')
+let text = document.querySelectorAll('.card-text')
+let img = document.querySelectorAll('.card-img-top')
+
+function reduceCard() {
+  if (text.style.display != 'none') {
+        text.style.display = 'none';
+        img.style.height = "20%";
+        img.style.width = "20%";
+        } else {
+        text.style.display = '';
+        img.style.width = '';
+        img.style.height = '';
+        }
+    };
+
+view.addEventListener("mouseover", reduceCard);
+
+
+//Faire tourner en boucle
+//for (let i = 0; i < view.length; i++) {
+
+//Fonction Image passe à 20%
+  //let mini_img = function () {
+    //img[i].style.width = "20%";
+  //}
+//Fonction Image passe à 100%
+  //let normal_img = function () {
+    //img[i].style.width = "100%";
+ // }
+
+//Fonction Text disparaît
+  //let toggle_text = function () {
+    //if (text[i].style.display === 'none') {
+      //img[i].style.display = 'block';
+    //} else {
+    // text[i].style.display = 'none';
+    //}
+  //}
+//let card_i = 0
+
+//Fonction qui rassemble les autres fonctions
+//function mini_card () {
+    //if (card_i === 0) {
+      //mini_img()
+      //toggle_text()
+      //card_i = 1
+    //} else if (card_i === 1) {
+      //normal_img()
+      //toggle_text()
+      //card_i = 0
+    //}
+  //}
+//}
+//Callback 
+//view.addEventListener("mouseover", mini_card)  
+
+
+
